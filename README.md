@@ -74,17 +74,17 @@ Used GridSearchCV for XGBoost to optimize learning rate, max depth, and estimato
 
 ## 📊 **Model Performance**
 
-**Model                Accuracy  Precision  Recall  F1 Score**
+**Model:    -->            Accuracy  Precision  Recall  F1 Score**
 
-Logistic Regression  0.695      0.147      0.839    0.250
+Logistic Regression: -->  0.695      0.147      0.839    0.250
 
-Random Forest        0.939      0.000      0.000    0.000
+Random Forest: -->       0.939      0.000      0.000    0.000
 
-Gradient Boosting    0.938      0.000      0.000    0.000
+Gradient Boosting: -->   0.938      0.000      0.000    0.000
 
-XGBoost              0.917      0.220      0.145    0.175
+XGBoost: -->             0.917      0.220      0.145    0.175
 
-Tuned XGBoost        0.800      0.186      0.677    0.292
+Tuned XGBoost: -->       0.800      0.186      0.677    0.292
 
 **Final Model: Tuned XGBoost**
 
