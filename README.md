@@ -1,161 +1,121 @@
-# Predicting Stroke Risk Using Patient Health Data
+# 🏥**Predicting Stroke Risk Using Patient Health Data**
 
-**Overview**
+## 📌 **Project Overview**
 
-Stroke is a leading cause of death and long-term disability worldwide. Early prediction of stroke risk can enable timely intervention and treatment, improving patient outcomes. This project leverages machine learning to build a predictive model for stroke likelihood based on patient demographic and health data.
+Stroke is a leading cause of death and disability worldwide. Early prediction of stroke risk can help in timely intervention and improved patient care. This project leverages machine learning techniques to predict the likelihood of stroke occurrence based on patient demographic and health data.
 
-**Project Goals**
+## 🎯 **Objective**
 
-Develop a Predictive Model: Use machine learning algorithms to classify stroke occurrence.
+Develop a machine learning model to classify whether a patient is at risk of stroke.
 
-Explore Various Models: Compare Logistic Regression, Random Forest, Gradient Boosting, and XGBoost.
+Compare multiple classification models to determine the best performer.
 
-Hyperparameter Tuning: Optimize models to enhance performance.
+Optimize model hyperparameters and evaluate performance using key metrics.
 
-Evaluate Performance: Identify the best model based on metrics like accuracy, precision, recall, and F1 score.
+## 📊 **Dataset Overview**
 
-**Dataset Description**
+**Dataset:** Stroke Prediction Dataset
 
-The Stroke Prediction Dataset includes:
+**Feature Category -->  Key Features**
 
-Demographics: Age, gender
+Demographics -->  Age, Gender
 
-Health Conditions: Hypertension, heart disease, BMI
+Health Conditions -->  Hypertension, Heart Disease, BMI
 
-Lifestyle Factors: Smoking status
+Lifestyle Factors -->  Smoking Status
 
-Target Variable: Stroke occurrence (1 = stroke, 0 = no stroke)
+Target Variable -->  Stroke (1 = Stroke, 0 = No Stroke)
 
-**Data Preprocessing**
+**Preprocessing Steps:**
 
-Handling Missing Values: Imputed missing values for BMI and smoking status.
+Handled missing values for bmi and smoking_status.
 
-Encoding: One-hot encoded categorical variables like gender and smoking status.
+One-hot encoding for categorical variables.
 
-Scaling: Standardized numerical features (e.g., age, BMI).
+Standardization of numerical features.
 
-Train-Test Split: Split data into 80% training and 20% testing subsets.
+Split dataset: 80% training, 20% testing.
 
-**Exploratory Data Analysis (EDA)**
+## 🔍 **Exploratory Data Analysis (EDA)**
 
-Class Imbalance: Severe imbalance with far fewer stroke cases.
+**Key Insights:**
 
-Key Features Correlation: Age, hypertension, and heart disease are significant predictors.
+Severe class imbalance: significantly more patients without stroke.
 
-Visualizations:
+Older individuals, those with hypertension, and those with heart disease had a higher likelihood of stroke.
 
-Histograms: Age, BMI, and glucose level distributions.
+**Visualizations:**
 
-Correlation Heatmap: Relationships among features.
+📈 Histograms: Age, BMI, and Glucose Levels Distribution
 
-Scatter Plot: BMI vs. stroke occurrence.
+📊 Correlation Heatmap: Identifies relationships between features
 
-Box Plot: Age vs. stroke occurrence.
+🎯 Scatter Plot: BMI vs. Stroke occurrence
 
-Pair Plot: Interaction effects between key features.
+📦 Box Plot: Age vs. Stroke
 
-**Modeling Process**
+🔗 Pair Plot: Interactions between risk factors
 
-Implemented Models
+##🤖 **Machine Learning Models**
 
-Logistic Regression (baseline)
+**Implemented Models:**
 
-Random Forest
+✅ Logistic Regression (Baseline Model)
 
-Gradient Boosting
+🌳 Random Forest (Ensemble Model)
 
-XGBoost (with and without tuning)
+📈 Gradient Boosting (Boosting Technique)
 
-Key Techniques
+⚡ XGBoost (Optimized Gradient Boosting)
 
-Addressed class imbalance using class_weight='balanced' and scale_pos_weight.
+**Hyperparameter Tuning:**
 
-Performed hyperparameter tuning (e.g., learning rate, max depth, number of estimators).
+Used GridSearchCV for XGBoost to optimize learning rate, max depth, and estimators.
 
-**Model Evaluation**
+## 📊 **Model Performance**
 
-Model: Logistic Regression
+**Model                Accuracy  Precision  Recall  F1 Score**
 
-Accuracy: 0.695
+Logistic Regression  0.695      0.147      0.839    0.250
 
-Precision: 0.147
+Random Forest        0.939      0.000      0.000    0.000
 
-Recall: 0.839
+Gradient Boosting    0.938      0.000      0.000    0.000
 
-F1 Score: 0.250
+XGBoost              0.917      0.220      0.145    0.175
 
-Model: Random Forest
+Tuned XGBoost        0.800      0.186      0.677    0.292
 
-Accuracy: 0.939
+**Final Model: Tuned XGBoost**
 
-Precision: 0.000
+Balanced recall and precision, crucial for handling class imbalance.
 
-Recall: 0.000
+Prioritizes correctly identifying stroke cases, minimizing false negatives.
 
-F1 Score: 0.000
+## 🔮 **Future Work & Recommendations**
 
-Model: Gradient Boosting
+✔ Adopt Tuned XGBoost for practical applications in stroke prediction.
 
-Accuracy: 0.938
+✔ Monitor Model Performance to ensure accuracy over time.
 
-Precision: 0.000
+✔ Incorporate Additional Health Features (e.g., cholesterol levels, lifestyle habits).
 
-Recall: 0.000
+✔ Experiment with Advanced Models such as deep learning.
 
-F1 Score: 0.000
+✔ Address Class Imbalance through improved resampling techniques.
 
-Model: XGBoost
+✔ Expand Model Scope to predict stroke prognosis and aid early intervention strategies.
 
-Accuracy: 0.917
+## 🚀 **Conclusion**
 
-Precision: 0.220
+This project demonstrates how machine learning can be used to predict stroke risk using patient data. By prioritizing recall, our model ensures that high-risk patients are identified, enabling timely medical intervention. Future improvements can further enhance accuracy and reliability in real-world applications.
 
-Recall: 0.145
+# 📬 **Connect with Me:**
 
-F1 Score: 0.175
+💼 LinkedIn: www.linkedin.com/in/hechector-sanchez-skaggs
 
-Model: Tuned XGBoost
+📧 Email: h.sanche94@gmail.com
 
-Accuracy: 0.800
+📂 Portfolio: https://github.com/hesanche94
 
-Precision: 0.186
-
-Recall: 0.677
-
-F1 Score: 0.292
-
-**Final Model Selection**
-
-Tuned XGBoost was selected for its balance between precision, recall, and F1 score, crucial for minimizing false negatives in stroke prediction.
-
-**Results and Recommendations**
-
-Final Model Metrics
-
-Accuracy: 0.800
-
-Precision: 0.186
-
-Recall: 0.677
-
-F1 Score: 0.292
-
-Recommendations
-
-Adopt Tuned XGBoost: Ideal for identifying stroke cases with high recall.
-
-Monitor Performance: Regularly evaluate the model with new data.
-
-Expand Features: Incorporate additional health metrics like cholesterol levels.
-
-**Future Work**
-
-Investigate advanced models (e.g., deep learning).
-
-Address class imbalance with enhanced resampling techniques.
-
-Explore feature engineering for improved model performance.
-
-**Conclusion**
-
-The Tuned XGBoost model provides a robust approach to predicting stroke likelihood using patient data. With a focus on maximizing recall, this model supports early intervention strategies, showcasing the potential of machine learning in healthcare.
+⭐ **If you found this project helpful, please consider giving it a star on GitHub!** ⭐
