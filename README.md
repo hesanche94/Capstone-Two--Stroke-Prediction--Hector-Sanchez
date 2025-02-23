@@ -2,7 +2,7 @@
 
 ## 📌 **Project Overview**
 
-Stroke is a leading cause of death and disability worldwide. Early prediction of stroke risk can help in timely intervention and improved patient care. This project leverages machine learning techniques to predict the likelihood of stroke occurrence based on patient demographic and health data.
+Strokes are a leading cause of death and disability worldwide. Early prediction of stroke risk can help in timely intervention and improved patient care. This project leverages machine learning techniques to predict the likelihood of stroke occurrence based on patient demographic and health data.
 
 ## 🎯 **Objective**
 
