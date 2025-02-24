@@ -1,3 +1,5 @@
+![2148610468](https://github.com/user-attachments/assets/04e599d2-74ba-48f0-95d9-4ae5aa3dc4bf)
+
 # 🏥**Predicting Stroke Risk Using Patient Health Data**
 
 ## 📌 **Project Overview**
